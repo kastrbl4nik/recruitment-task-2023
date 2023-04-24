@@ -32,6 +32,53 @@ body {
   background-color: #b6b6cc;
   width: min(90vw, 80vh);
   height: min(90vw, 80vh);
+  padding: 10px;
 }
 
 /* place your styles below */
+
+* {
+  box-sizing: border-box;
+}
+
+button {
+  all: unset;
+  background-color: #1b1c2e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #f0f0f5;
+  color: #1b1c2e;
+  transition: all, .2s;
+}
+
+.tile {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  gap: 10px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.tile h3 {
+  display: inline-block;
+  margin: 10px 0;
+}
+
+.tile p {
+  margin: 0;
+}
+
+.verticalSplitter {
+  flex-direction: row;
+}
+
+.horizontalSplitter {
+  flex-direction: column;
+}
